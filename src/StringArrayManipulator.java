@@ -10,18 +10,18 @@ public class StringArrayManipulator {
     }
 
     public void addString(String newString) {
-        //создаем новый масив и присваиваем значения из текущего массива
-        String[] actualArray = stringArray;
+        //создаем временный масив и присваиваем значения из текущего массива
+        String[] tempArray = stringArray;
         // создаем за нова stringArray и увеличиваем размер на один элемент
-        stringArray = new String[actualArray.length + 1];
+        stringArray = new String[tempArray.length + 1];
 
-        for (int i = 0; i <= actualArray.length; i++) {
+        for (int i = 0; i <= tempArray.length; i++) {
             //заполняем значениями новый масив и ставим проверку что бы не получить ошибку индекс в не диапазона так как диапазон индексов actualArray меньше по размеру
-            if(i < actualArray.length){
-                stringArray[i] = actualArray[i];
+            if(i < tempArray.length){
+                stringArray[i] = tempArray[i];
             }
             //Добавляем новую строку в конец нашего массива
-            if (i == actualArray.length) {
+            if (i == tempArray.length) {
                 stringArray[i] = newString;
             }
         }
