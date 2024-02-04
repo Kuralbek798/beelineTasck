@@ -20,6 +20,7 @@ public class StringArrayManipulator {
             if(i < actualArray.length){
                 stringArray[i] = actualArray[i];
             }
+            //Добавляем новую строку в конец нашего массива
             if (i == actualArray.length) {
                 stringArray[i] = newString;
             }
