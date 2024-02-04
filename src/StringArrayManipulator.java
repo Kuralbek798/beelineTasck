@@ -12,7 +12,7 @@ public class StringArrayManipulator {
     public void addString(String newString) {
         //создаем временный масив и присваиваем значения из текущего массива
         String[] tempArray = stringArray;
-        // создаем за нова stringArray и увеличиваем размер на один элемент
+        // создаем занова stringArray и увеличиваем размер на один элемент
         stringArray = new String[tempArray.length + 1];
 
         for (int i = 0; i <= tempArray.length; i++) {
